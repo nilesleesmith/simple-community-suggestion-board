@@ -10,5 +10,8 @@
     "ejs": "^3.1.8",
     "express": "^4.13.3",
     "mongodb": "^3.3.4"
+  },
+  "devDependencies": {
+    "render": "^0.1.4"
   }
 }
