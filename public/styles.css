@@ -1,0 +1,31 @@
+body {
+  background: white;
+  color: black;
+  font-family: Arial, sans-serif;
+  margin: 30px;
+}
+
+input, textarea {
+  display: block;
+  width: 300px;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid gray;
+}
+
+button {
+  margin: 5px 0;
+  padding: 6px 10px;
+  border: 1px solid gray;
+  background: lightgray;
+}
+
+.suggestions {
+  padding: 0;
+  list-style: none;
+}
+
+.suggestions li {
+  border-bottom: 1px solid silver;
+  padding: 10px 0;
+}

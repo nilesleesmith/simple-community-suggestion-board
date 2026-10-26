@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Community Suggestion Board</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <h1>Community Suggestion Board</h1>
+
+    <h2>Add a suggestion</h2>
+    <form action="/suggestions" method="POST">
+      <input type="text" placeholder="Suggestion title" name="title">
+      <textarea placeholder="Suggestion description" name="description"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Suggestions</h2>
+    <ul class="suggestions">
+      <% for (var i = 0; i < suggestions.length; i++) { %>
+        <li>
+          <h3><%= suggestions[i].title %></h3>
+          <p><%= suggestions[i].description %></p>
+          <a href="/suggestions/<%= suggestions[i]._id %>/edit">Edit</a>
+          <form action="/suggestions/<%= suggestions[i]._id %>/delete" method="POST">
+            <button type="submit">Delete</button>
+          </form>
+        </li>
+      <% } %>
+    </ul>
+  </body>
+</html>

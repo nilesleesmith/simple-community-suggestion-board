@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edit Suggestion</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <h1>Edit Suggestion</h1>
+    <form action="/suggestions/<%= suggestion._id %>/edit" method="POST">
+      <input type="text" name="title" value="<%= suggestion.title %>" placeholder="Suggestion title">
+      <textarea name="description" placeholder="Suggestion description"><%= suggestion.description %></textarea>
+      <button type="submit">Save</button>
+    </form>
+    <p><a href="/">Cancel</a></p>
+  </body>
+</html>
