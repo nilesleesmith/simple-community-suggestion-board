@@ -90,4 +90,4 @@ https://simple-community-suggestion-board.onrender.com
 
 ## Screenshots
 
-Coming soon! Desktop, tablet, and mobile screenshots will be added here.
+![Simple Community Suggestion Board desktop view](./screenshots/simple-community-suggestion-board-desktop.png)
